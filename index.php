@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <title>PHP code examples</title>
+<meta charset ="UTF-8">
+<title>Eka sivu</title>
 </head>
-
 <body>
-    <h1>PHP code examples </h1>
-
-	<div>	
-			<a href="helloworld.php" >Hello World</a>
-			<br>
-			<a href="basicinput.php" >Basic input</a>
-			<br>
-			<a href="basicmath.php" >Basic Math</a>
-			<br>
-			<a href="whileloop.php" >While loop</a>
-			<br>
-			<a href="forloop.php" >For loop</a>
-	</div>
-
+<p> Tervetuloa! </p>
+<form method="POST" action="/login.php">
+  Käyttäjä : <input type="text" name="enimi"required><br>
+  Salasana : <input type="password" name="salasana"required><br>
+  <input type="submit" value="Kirjaudu">
+</form>
+<input type= "submit" onclick="window.location.href = '/rekisteroityminen.php';" value="Rekisteröidy">
 </body>
-
 </html>
