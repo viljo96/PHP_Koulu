@@ -65,5 +65,6 @@ if ($result->num_rows > 0) {
 
 
 ?>
+  <a href="secondpage.php">Lisää liikuntasuorituksia</a>
 </body>
 </html>
