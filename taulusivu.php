@@ -4,7 +4,7 @@ session_start();
 $servername = "127.0.0.1:50300";
 $username = "azure";
 $password = "6#vWHD_$";
-$dbname="liikuntakanta";
+$dbname="localdb";
 $liikuntamuoto=$_POST['liikuntamuoto'];
 $_SESSION['liikunta']=$liikuntamuoto;
 $tunnit=$_POST['Tunnit'];
