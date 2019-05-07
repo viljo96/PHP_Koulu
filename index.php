@@ -3,7 +3,7 @@
 <head>
   <style>
     form{
-      text-allign:center;
+      text-align:center;
     }
   </style>
 <meta charset ="UTF-8">
