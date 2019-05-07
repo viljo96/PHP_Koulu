@@ -32,7 +32,7 @@ session_start();
 $servername = "127.0.0.1:50300";
 $username = "azure";
 $password = "6#vWHD_$";
-$dbname="liikuntakanta";
+$dbname="localdb";
 $kayttajaid=$_SESSION['kayttajaId'];
 $table1="<table>";
 $table2="</table>";
