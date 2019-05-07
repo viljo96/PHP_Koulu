@@ -3,8 +3,12 @@
 <head>
 <meta charset ="UTF-8">
 <title>Rekisteröityminen</title>
+ <style>
+   body{
+     text-align:center;
+  </style>
 </head>
-<body>
+<body background="urheilukuva.jpg">
 <p> Tervetuloa rekisteröitymään! </p>
 <form method="POST" action="/registeration_page.php">
   Käyttäjä : <input type="text" name="kayttajanimi"required><br>
