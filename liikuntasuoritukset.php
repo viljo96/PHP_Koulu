@@ -21,6 +21,7 @@ th{
 </style>
 </head>
 <body>
+  <p>Aikaisemmat liikuntasuorituksesi</p>
 <?php
 session_start();
 $servername = "127.0.0.1:50300";
@@ -51,14 +52,12 @@ if ($result->num_rows > 0) {
     echo$th1."Kalorit".$th2;
     echo$row2.$br;
     while($row = $result->fetch_assoc()) {
-       echo$row1.$td1.$row["liikuntamuoto"].$td2.$td1.$row["Tunnit"].$td2.$td1.$row["Paivamaara"].$td2.$td1.$row["Kalorit"].$td2.$td1."<form method=\"POST\" action=\"/poistarivi.php\"><button type=\"submit\" name=\"id\" value=\"$row[RiviId]\">poista</button></form>".$td2.$row2;
+      echo$row1.$td1.$row["liikuntamuoto"].$td2.$td1.$row["Tunnit"].$td2.$td1.$row["Paivamaara"].$td2.$td1.$row["Kalorit"].$td2.$td1."<form method=\"POST\" action=\"/poistarivi.php\"><button type=\"submit\" name=\"id\" value=\"$row[RiviId]\">poista</button></form>".$td2.$row2;
     }
     echo $table2;
   }
 
-
 ?>
-  <a href="secondpage.php">Lisää liikuntasuorituksia</a>
-    <a href="index.php">Kirjaudu ulos</a>
+<a href="secondpage.php">Lisää liikuntasuorituksia</a>
 </body>
 </html>
