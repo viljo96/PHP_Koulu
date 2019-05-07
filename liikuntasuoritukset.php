@@ -18,9 +18,12 @@ td{
 th{
   border:solid;
 }
+  body{
+    text-align:center;
+  }
 </style>
 </head>
-<body>
+<body background="urheilukuva.jpg">
   <p>Aikaisemmat liikuntasuorituksesi</p>
 <?php
 session_start();
