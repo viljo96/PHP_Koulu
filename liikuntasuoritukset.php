@@ -8,6 +8,7 @@
     text-align:center;
   }
 table{
+    align:center;
   border: solid;
   color:black;
 }
