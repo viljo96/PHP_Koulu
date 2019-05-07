@@ -37,7 +37,6 @@ $th2="</th>";
 $td1="<td>";
 $td2="</td>";
 $br="<br>";
-$Button1="<button class=\"delete\" onclick=\"poistaRivi();\">poista</button>";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 $sql ="SELECT *FROM liikunta WHERE Kayttaja_kayttajaId=$kayttajaid";
