@@ -8,6 +8,7 @@
     .nappi1{
       border:none;
       text-align:center;
+      padding:5px;
     }
   </style>
 <meta charset ="UTF-8">
