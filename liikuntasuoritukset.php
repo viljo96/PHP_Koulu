@@ -35,7 +35,7 @@ $username = "azure";
 $password = "6#vWHD_$";
 $dbname="localdb";
 $kayttajaid=$_SESSION['kayttajaId'];
-$table1="<table>";
+$table1="<table align="center">";
 $table2="</table>";
 $row1="<tr>";
 $row2="</tr>";
