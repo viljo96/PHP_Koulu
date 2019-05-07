@@ -8,7 +8,7 @@
     text-align:center;
   }
 table{
-    align:center;
+    margin:auto;
   border: solid;
   color:black;
 }
@@ -35,7 +35,7 @@ $username = "azure";
 $password = "6#vWHD_$";
 $dbname="localdb";
 $kayttajaid=$_SESSION['kayttajaId'];
-$table1="<table align="center">";
+$table1="<table>";
 $table2="</table>";
 $row1="<tr>";
 $row2="</tr>";
