@@ -4,7 +4,12 @@
 <meta charset ="UTF-8">
 <title>Toka sivu</title>
 </head>
-<body>
+  <style>
+    body{
+      text-align:center;
+    }
+  </style>
+<body background="urheilukuva.jpg>
   <?php
   //Tervehditään käyttäjää
   session_start();
