@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    form{
+      text-allign:center;
+    }
+  </style>
 <meta charset ="UTF-8">
 <title>Eka sivu</title>
 </head>
