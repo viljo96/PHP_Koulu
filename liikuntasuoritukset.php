@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>liikuntasuoritusten tarkastelu</title>
 <style>
+    body{
+    align:center;
+  }
 table{
   border: solid;
   color:black;
@@ -18,9 +21,7 @@ td{
 th{
   border:solid;
 }
-  body{
-    text-align:center;
-  }
+
 </style>
 </head>
 <body background="urheilukuva.jpg">
