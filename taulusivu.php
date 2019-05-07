@@ -26,10 +26,9 @@ $sql = "SELECT Kulutus FROM liikuntamuoto WHERE Nimi='$liikuntamuoto'" ;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // output data of each row
     while($row = $result->fetch_assoc()) {
 $kokonaiskulutus=$tunnit*$row['Kulutus'];
-
+//lasketaan kalorien kulutus käyttäjän antamien tuntien,sekä käyttäjän painon mukaisesti
 if($paino<70){
   $loppukulutus=$kokonaiskulutus*0.94;
   if($ika<20){
@@ -156,7 +155,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-//Suoritetaan tietokantakysely
+//Lisätään käyttäjän antamat tiedot tietokantaan
 $sql = "INSERT INTO liikunta(Kayttaja_kayttajaId,Paivamaara,Tunnit,Kalorit,liikuntamuoto) VALUES($kayttajaid,'$pvm1',$tunnit,$loppukulutus,'$liikuntamuoto')" ;
 $result = $conn->query($sql);
   header("refresh:2;url=liikuntasuoritukset.php");
