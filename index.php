@@ -4,7 +4,7 @@
 <meta charset ="UTF-8">
 <title>Eka sivu</title>
 </head>
-<body>
+<body background="urheilukuva.jpg">
 <p> Tervetuloa! </p>
 <form method="POST" action="/login.php">
   Käyttäjä : <input type="text" name="enimi"required><br>
