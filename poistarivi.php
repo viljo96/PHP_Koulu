@@ -1,13 +1,11 @@
 <?php
   $napinID=$_POST['id'];
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname="liikuntakanta";
+  $servername = "127.0.0.1:50300";
+  $username = "azure";
+  $password = "6#vWHD_$";
+  $dbname="localdb";
   // Luodaan tietokantayhteys
   $conn = new mysqli($servername, $username, $password,$dbname);
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
 
   $sql ="DELETE FROM liikunta WHERE RiviId =$napinID ";
   $result = $conn->query($sql);

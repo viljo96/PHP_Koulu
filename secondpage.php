@@ -27,5 +27,6 @@ Päiväys: <input type="date" name="pvm" required</br>
 
 </form>
 </div>
+  <a href="index.php">Kirjaudu ulos</a>
 </body>
 </html>

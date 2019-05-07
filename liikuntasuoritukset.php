@@ -21,18 +21,13 @@ th{
 </style>
 </head>
 <body>
+  <p>Aikaisemmat liikuntasuorituksesi</p>
 <?php
-function poistaRivi(){
-  $conn = new mysqli($servername, $username, $password, $dbname);
-
-  $sql ="DROP FROM liikunta WHERE";
-  $result = $conn->query($sql);
-}
 session_start();
 $servername = "127.0.0.1:50300";
 $username = "azure";
 $password = "6#vWHD_$";
-$dbname="liikuntakanta";
+$dbname="localdb";
 $kayttajaid=$_SESSION['kayttajaId'];
 $table1="<table>";
 $table2="</table>";
@@ -43,7 +38,6 @@ $th2="</th>";
 $td1="<td>";
 $td2="</td>";
 $br="<br>";
-$Button1="<button class=\"delete\" onclick=\"poistaRivi();\">poista</button>";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 $sql ="SELECT *FROM liikunta WHERE Kayttaja_kayttajaId=$kayttajaid";
@@ -58,12 +52,13 @@ if ($result->num_rows > 0) {
     echo$th1."Kalorit".$th2;
     echo$row2.$br;
     while($row = $result->fetch_assoc()) {
-      echo$row1.$td1.$row["liikuntamuoto"].$td2.$td1.$row["Tunnit"].$td2.$td1.$row["Paivamaara"].$td2.$td1.$row["Kalorit"].$td2.$td1.$Button1.$td2.$row2;
+      echo$row1.$td1.$row["liikuntamuoto"].$td2.$td1.$row["Tunnit"].$td2.$td1.$row["Paivamaara"].$td2.$td1.$row["Kalorit"].$td2.$td1."<form method=\"POST\" action=\"/poistarivi.php\"><button type=\"submit\" name=\"id\" value=\"$row[RiviId]\">poista</button></form>".$td2.$row2;
     }
     echo $table2;
   }
 
-
 ?>
+<a href="secondpage.php">Lisää liikuntasuorituksia</a>
+  <a href="index.php">Kirjaudu ulos</a>
 </body>
 </html>
