@@ -9,7 +9,7 @@
       text-align:center;
     }
   </style>
-<body background="urheilukuva.jpg>
+<body background="urheilukuva.jpg">
   <?php
   //Tervehditään käyttäjää
   session_start();
