@@ -26,6 +26,7 @@ th{
 <body background="urheilukuva.jpg">
   <p>Aikaisemmat liikuntasuorituksesi</p>
 <?php
+  //Luodaan muuttujat
 session_start();
 $servername = "127.0.0.1:50300";
 $username = "azure";
@@ -41,12 +42,13 @@ $th2="</th>";
 $td1="<td>";
 $td2="</td>";
 $br="<br>";
+  //Luodaan tietokantayhteys
 $conn = new mysqli($servername, $username, $password, $dbname);
-
+//Luodaan kysely
 $sql ="SELECT *FROM liikunta WHERE Kayttaja_kayttajaId=$kayttajaid";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-    // output data of each row
+    // Luodaan taulukko,johon kyselystä saadut vastaukset sijoitetaan
     echo $table1.$br;
     echo$row1.$br;
     echo$th1."Liikuntamuoto".$th2;
