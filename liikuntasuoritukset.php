@@ -5,7 +5,7 @@
 <title>liikuntasuoritusten tarkastelu</title>
 <style>
     body{
-    align:center;
+    text-align:center;
   }
 table{
   border: solid;
