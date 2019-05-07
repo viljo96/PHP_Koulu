@@ -27,8 +27,8 @@ if ($result->num_rows > 0) {
         if($row["kayttajanimi"]!=$kayttajanimi){
           echo"Rekisteröityminen onnistui!";
 //Luodaaan käyttäjä tietokantaan
-          $sql ="INSERT INTO kayttaja (KayttajaId,Paino,Nimi,ika,Salasana,kayttajanimi)
-          VALUES('$kayttajaid','$paino','$nimi','$ika','$pass','$kayttajanimi')";
+          $sql ="INSERT INTO kayttaja (Paino,Nimi,ika,Salasana,kayttajanimi)
+          VALUES('$paino','$nimi','$ika','$pass','$kayttajanimi')";
           $result = $conn->query($sql);
           //Siirrytään etusivulle
               header("refresh:2;url=index.php");
