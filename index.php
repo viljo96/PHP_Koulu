@@ -5,11 +5,6 @@
     body{
       text-align:center;
     }
-    .nappi1{
-      border:none;
-      text-align:center;
-      padding:5px;
-    }
   </style>
 <meta charset ="UTF-8">
 <title>Eka sivu</title>
