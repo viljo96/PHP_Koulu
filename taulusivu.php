@@ -1,9 +1,9 @@
 <?php
 session_start();
 //Alustetaan muuttujat
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "127.0.0.1:50300";
+$username = "azure";
+$password = "6#vWHD_$";
 $dbname="liikuntakanta";
 $liikuntamuoto=$_POST['liikuntamuoto'];
 $_SESSION['liikunta']=$liikuntamuoto;
