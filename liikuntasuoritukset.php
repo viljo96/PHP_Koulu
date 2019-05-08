@@ -22,7 +22,13 @@ td{
 th{
   border:solid;
 }
-
+    @media max width 1060px{
+      width:67%;
+    }
+    @media max width 768px{
+      width:100%;
+      
+    }
 </style>
 </head>
 <body background="urheilukuva.jpg">
