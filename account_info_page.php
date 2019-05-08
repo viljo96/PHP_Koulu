@@ -1,10 +1,10 @@
 <?php
 session_start();
 //Alustetaan muuttujat
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname="liikuntakanta";
+$servername = "127.0.0.1:50300";
+$username = "azure";
+$password = "6#vWHD_$";
+$dbname="localdb";
 $ika=$_POST['ika'];
 $paino=$_POST['paino'];
 $kayttaja=$_SESSION['enimi'];
