@@ -2,6 +2,9 @@
 <html>
 <head>
   <style>
+    @media max width 1060px{
+      width:67%;
+    }
     body{
       text-align:center;
     }
