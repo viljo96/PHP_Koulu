@@ -5,6 +5,10 @@
     @media max width 1060px{
       width:67%;
     }
+    @media max width 768px{
+      width:100%;
+      
+    }
     body{
       text-align:center;
     }
