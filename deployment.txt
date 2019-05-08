@@ -1,0 +1,8 @@
+Instructions for deployment in local:
+1.    Install an app like XAMPP
+2.    Start Apache and MySQL servers
+3.    You need to download this project to computer and create a file called liikuntakanta and add it to the XAMPP\htdocs\ folder.
+4.    To create the database import liikuntakanta.sql to your local database.
+5.    Change to all files that take connection to the database $servername to ‘localhost’, $username to ‘root’, $password to ‘’ and $dbname to ‘liikuntakanta’.
+6.    Type to your browser localhost/liikuntakanta/index.php
+7.    Enjoy the content!
