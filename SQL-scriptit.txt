@@ -1,0 +1,45 @@
+
+Taulujen luonti:
+
+CREATE TABLE kayttaja(
+KayttajaId INT NOT NULL AUTO_INCREMENT,
+Paino INT NOT NULL, 
+Nimi TEXT NOT NULL,
+Ika INT NOT NULL,
+Salasana TEXT NOT NULL,
+Kayttajanimi TEXT NOT NULL,
+PRIMARY KEY(KayttajaId)
+);
+
+
+
+CREATE TABLE liikunta(
+RiviId INT NOT NULL AUTO_INCREMENT, 
+Kayttaja_kayttajaId INT NOT NULL, 
+Paivamaara DATE NOT NULL, 
+Tunnit INT NOT NULL, 
+Kalorit INT NOT NULL, 
+Liikuntamuoto INT NOT NULL, 
+PRIMARY KEY(RiviId) 
+);
+
+CREATE TABLE liikuntamuoto(LiikuntamuotoId INT NOT NULL,
+Nimi TEXT NOT NULL,
+Kulutus INT NOT NULL )
+
+Testidatan lis‰‰minen tauluihin:
+
+INSERT INTO kayttaja(Paino,Nimi,Ika,Salasana,Kayttajanimi)
+VALUES(80,'Viljami',22,'kiekko','Viljo96');
+
+INSERT INTO liikuntamuoto(LiikuntamuotoId,Nimi,Kulutus)
+VALUES(1,'uinti',995);
+
+INSERT INTO liikuntamuoto(LiikuntamuotoId,Nimi,Kulutus)
+VALUES(2,'juoksu',433);
+
+INSERT INTO liikuntamuoto(LiikuntamuotoId,Nimi,Kulutus)
+VALUES(3,'sali',360);
+
+INSERT INTO liikuntamuoto(LiikuntamuotoId,Nimi,Kulutus)
+VALUES(4,'pallopelit',505)

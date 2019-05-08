@@ -1,0 +1,47 @@
+Projektin kuvaus:
+
+Teimme sivun jolle voi kirjautua ja lisätä tietoa omista liikuntasuorituksistaan
+sivulla vois myös poistaa olemassa olevia liikuntasuorituksia, sivu laskee
+liikuntasuorituksissa kuluneet kalorit käyttäjän iän,painon,liikunta muodon ja
+liikuntaan käytetyn ajan mukaisesti.
+
+
+
+Sivu 1 (Kirjautuminen
+Käyttäjätunnus 
+Salasana
+tunnistuautuminen 
+
+Sivu2
+Käyttäjätunnus tervehdys
+Liikuntasuorituksen kirjaaminen{
+liikuntavaihtoehdot
+tunnit
+päivämäärä
+}(lisäys)
+
+Sivu3
+Liikuntasuoritusten esitteleminen
+Taulukko jossa on liikuntasuoritukset sekä liikuntasuoritusten poisto mahdollisuus (poisto)
+
+Sivu 4 rekisteröityminen
+Käyttäjän tietojen kerääminen ja tallentaminen tietokantaan
+
+Taulukko 1:
+Käyttäjäidt
+Käyttäjätunnukset
+Salasanat
+Nimet
+Painot
+iät
+Taulukko 2:
+Liikuntasuoritukset:
+Liikuntamuoto
+Aika
+Kalorit(kaloritaulukon arvo * tunnit)
+(Poisto)
+
+Taulukko 3: Kaloritaulu
+Liikuntamuotoid
+Liikuntamuodon nimi
+Liikuntamuodon kulutus/tunti/keskiarvohenkilö, todellinen kulutus lasketaan funktion avulla
